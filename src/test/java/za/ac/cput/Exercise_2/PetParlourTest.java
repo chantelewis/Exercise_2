@@ -4,7 +4,16 @@ import junit.framework.TestCase;
 
 public class PetParlourTest extends TestCase {
 
-    public void setUp() throws Exception {
-        super.setUp();
+    private PetParlour petIn;
+    private PetParlour petOut;
+    private PetParlour Balance;
+
+    @BeforeEach
+    public void setUp() {
+        petIn = new PetParlour();
+        petOut = petIn;
+        Balance = new PetParlour();
     }
+
+    
 }
