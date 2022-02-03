@@ -1,6 +1,9 @@
 package za.ac.cput.Exercise_2;
 
 import junit.framework.TestCase;
+import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Timeout;
 
 public class PetParlourTest extends TestCase {
 
@@ -15,5 +18,9 @@ public class PetParlourTest extends TestCase {
         Balance = new PetParlour();
     }
 
-    
+    @Test
+    @Timeout(2)
+    public void testEquality(){
+        assertEquals(petIn, petOut);
+    }
 }
