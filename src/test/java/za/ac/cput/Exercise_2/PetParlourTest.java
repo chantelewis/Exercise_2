@@ -18,7 +18,7 @@ public class PetParlourTest extends TestCase {
         Balance = new PetParlour();
     }
 
-    @Test
+    @Test //Rhegan
     @Timeout(2)
     public void testEquality(){
         assertEquals(petIn, petOut);
