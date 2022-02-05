@@ -19,6 +19,11 @@ public class PetParlourTest extends TestCase {
         Balance = new PetParlour();
     }
 
+    @Test // Marvin
+    public void testIdentity() {
+        assertSame(petIn,petOut);
+    }
+
     @Test //Rhegan
     @Timeout(2)
     public void testEquality(){
@@ -30,10 +35,10 @@ public class PetParlourTest extends TestCase {
         assertSame(petIn, petOut);
         fail("This will fail");
     }
-    @Test
-    @Disabled
-    public void testDisable(){
-        assertEquals(petIn, petOut);
-    }
 
+    @Test
+    @Disabled // Chanté
+    public void testDisabled(){
+        assertEquals(petIn,petOut);
+    }
 }
