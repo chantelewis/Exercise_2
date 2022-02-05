@@ -3,6 +3,7 @@ package za.ac.cput.Exercise_2;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Timeout;
 
 public class PetParlourTest extends TestCase {
@@ -23,4 +24,16 @@ public class PetParlourTest extends TestCase {
     public void testEquality(){
         assertEquals(petIn, petOut);
     }
+
+    @Test // Mariam
+    public void testFail(){
+        assertSame(petIn, petOut);
+        fail("This will fail");
+    }
+    @Test
+    @Disabled
+    public void testDisable(){
+        assertEquals(petIn, petOut);
+    }
+
 }
