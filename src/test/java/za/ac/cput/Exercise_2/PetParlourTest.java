@@ -30,6 +30,12 @@ public class PetParlourTest extends TestCase {
         assertEquals(petIn, petOut);
     }
 
+    @Test // Mariam
+    public void testFail(){
+        assertSame(petIn, petOut);
+        fail("This will fail");
+    }
+
     @Test
     @Disabled // Chanté
     public void testDisabled(){
